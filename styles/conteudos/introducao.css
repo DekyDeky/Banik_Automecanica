@@ -1,0 +1,73 @@
+@media screen and (max-width: 480px) {
+    
+}
+
+@media screen and (min-width: 1080px) {
+    
+}
+
+.conteudo_introducao {
+    height: calc(100vh - var(--cabecalho-height));
+
+    color: var(--introducao_font-color);
+
+    background-image: url('../../imgs/Sirineu.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo_introducao-texto {
+    font-size: var(--introducao_font-title--size);
+    font-weight: var(--font_title-weight);
+
+    width: 70%;
+    margin-top: auto;
+    margin-left: 50px;
+}
+
+.conteudo_introducao-whats {
+    background-color: #ff3131;
+    width: 600px;
+    padding-top: 15px;
+    padding-bottom: 4px;
+    border-radius: 15px;
+    color: white;
+
+    font-weight: var(--font_title-weight);
+    font-size: var(--introducao_font-title--size);
+    text-align: center;
+
+    margin-left: 50px;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.conteudo_introducao-whats:hover {
+    background-color: #c92626;
+    transition: .5s;
+}
+
+.conteudo_introducao-sirineu {
+    color: var(--introducao_font-color--sirineu);
+    font-size: var(--introducao_font-size--sirineu);
+
+    align-self: flex-end;
+    margin-top: auto;
+    margin-right: 50px;
+}
+
+.conteudo_introducao-nome {
+    font-weight: var(--font_title-weight);
+    font-size: 40px
+}
+
+.conteudo_introducao-ocupacao {
+    font-weight: 300;
+    font-style: italic;
+    padding-bottom: 25px;
+}

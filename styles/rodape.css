@@ -1,0 +1,26 @@
+.rodape {
+    background-color: var(--rodape_bg-color);
+
+    height: 150px;
+}
+
+.rodape_nav {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodape_nav-item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: var(--rodape_font-size);
+}
+
+.rodape_nav-item--titulo {
+    font-weight: var(--font_title-weight);
+}

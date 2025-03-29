@@ -1,0 +1,4 @@
+.conteudo_clientes {
+    height: 100vh;
+    background-color: var(--clientes_bg-color);
+}

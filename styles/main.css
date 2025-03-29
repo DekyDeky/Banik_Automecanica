@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap'); /* Não achei a fonte original para download ou de fácil acesso */
+@import url(reset.css);
+@import url(cabecalho.css);
+@import url(rodape.css);
+@import url(conteudos/conteudos.css);
+
+:root {
+    --font: "League Spartan", sans-serif;
+
+    --font_title-weight: 800;
+
+    --cabecalho-height: 150px;
+    
+    --cabecalho_font-size: 2vw;
+    --cabecalho_font-color: black;
+
+    --btnVoltar_font-color: white;
+    
+    --introducao_font-color: white;
+    --introducao_font-title--size: 3.5rem;
+    --introducao_font-color--sirineu: #c4c0c0;
+    --introducao_font-size--sirineu: 2rem;
+
+    --diferenciais_bg-color: #c4c0c0;
+    --diferenciais_font-color: #21446f;
+    --diferenciais_font-title--size: 5rem;
+    --diferenciais_font-title2--size: 2rem;
+    --diferenciais_font-text--size: 1.5rem;
+
+    --servicos_bg-color: white;
+    --servicos_font-text-size: 1.3rem;
+
+    --rodape_bg-color: #c4c0c0;
+    --rodape_font-size: 1.5rem;
+
+}
+
+@media only screen and (max-width: 480px) {
+    .logo_banik {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .logo_banik {
+        width: 20%;
+    }
+}
+
+
+html {
+    font-family: var(--font);
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6)), url('../imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    margin-top: 20px;
+
+    font-size: var(--diferenciais_font-title--size);
+    font-weight: var(--font_title-weight);
+    text-transform: uppercase;   
+    
+    color: var(--diferenciais_font-color);
+}
+
+.voltarInicio {
+    display: block;
+
+    font-weight: var(--font_title-weight);
+    color: var(--btnVoltar_font-color);
+    font-size: 3rem;
+
+    background-color: #21446f;
+    width: 480px;
+    padding-top: 15px;
+    padding-bottom: 3px;
+
+    margin: 0 auto;
+    margin-top: auto;
+}
