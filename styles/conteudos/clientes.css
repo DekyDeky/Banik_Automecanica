@@ -1,13 +1,13 @@
 @media screen and (min-width: 1100px) { 
     .conteudo_clientes {
-        height: 100vh;
+        height: 100%;
     }
 
     .conteudo_clientes-item {
         width: 25%;
-        height: 620px;
+        height: 65vh;
 
-        margin: auto 0;
+        margin: 25px 0;
     }
 }
 
@@ -28,7 +28,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
     .conteudo_clientes-item {
         height: 580px;
     }
