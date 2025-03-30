@@ -1,12 +1,14 @@
-@media screen and (min-width: 768px){ /* Laptops */
+@media screen and (min-width: 1000px){ /* Laptops */
     .conteudo_diferenciais-item {
         width: 25%;
+        height: 100vh;
     }
 }
 
-@media screen and (max-width: 768px){ /*Celulares pequenos */
+@media screen and (max-width: 1000px){ /*Celulares pequenos */
     .conteudo_diferenciais {
         flex-wrap: wrap;
+        height: 100%;
     }
 
     .conteudo_diferenciais-itens {
@@ -15,11 +17,11 @@
 
     .conteudo_diferenciais-item {
         width: 100%;
+        margin: 25px 0;
     }
 }
 
 .conteudo_diferenciais {
-    height: 100vh;
     background-color: var(--diferenciais_bg-color);
 
     color: var(--diferenciais_font-color);

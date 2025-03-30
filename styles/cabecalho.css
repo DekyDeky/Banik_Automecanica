@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
     .cabecalho {
         justify-content: space-between;
         height: var(--cabecalho-height);
@@ -26,7 +26,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .cabecalho {
         justify-content: space-around;
         flex-direction: column;
@@ -59,7 +59,7 @@
         margin-top: 10px;
 
         border-bottom: 2px solid black;
-        width: 100%;
+        width: 80%;
 
         text-align: center;
     }

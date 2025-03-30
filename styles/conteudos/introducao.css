@@ -33,7 +33,6 @@
     .conteudo_introducao {
         align-items: center;
 
-
         background-position: bottom center;
         background-size: 58%;
 
@@ -69,6 +68,12 @@
 @media screen and (max-width: 650px) {
     .conteudo_introducao {
         background-size: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .conteudo_introducao {
+        background: none!important;
     }
 }
 
