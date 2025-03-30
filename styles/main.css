@@ -13,6 +13,7 @@
     --cabecalho-height: 150px;
     
     --cabecalho_font-size: 2vw;
+    --cabecalho_font-size--phone: 2rem;
     --cabecalho_font-color: black;
 
     --btnVoltar_font-color: white;
@@ -48,7 +49,7 @@
 
 @media only screen and (max-width: 768px) {
     .logo_banik {
-        width: 70%;
+        width: 60%;
     }
 
     .titulo {
@@ -62,7 +63,7 @@
 
 @media only screen and (min-width: 768px) {
     .logo_banik {
-        width: 20%;
+        width: 50%;
     }
 
     .titulo {

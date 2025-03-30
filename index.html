@@ -8,9 +8,11 @@
 </head>
 <body>
     <header class="cabecalho" id="introducao">
-        <img src="imgs/logoBanik.svg" alt="" class="logo_banik cabecalho_logo">
-        <img src="imgs/burgeMenu.svg" alt="" class="cabecalho_menu">
-        <nav class="cabecalho_nav">
+        <div class="cabecalho_icons">
+            <img src="imgs/logoBanik.svg" alt="" class="logo_banik cabecalho_logo">
+            <img src="imgs/burgeMenu.svg" alt="" class="cabecalho_menu" id="menuBotao">
+        </div>
+        <nav class="cabecalho_nav" id="cabecalhoNav">
             <a href="#introducao" class="cabecalho_nav-item">Início</a>
             <a href="#diferencial" class="cabecalho_nav-item">Diferenciais</a>
             <a href="#servicos" class="cabecalho_nav-item">Serviços</a>
@@ -139,5 +141,28 @@
             </div>
         </nav>
     </footer>
+
+    <script>
+        nav = document.getElementById('cabecalhoNav');
+
+        aberto = false;
+
+        document.getElementById('menuBotao').addEventListener("click", () => {
+            if(!aberto){
+                nav.style.display = 'flex';
+                aberto = true;
+            }else {
+                nav.style.display = 'none';
+                aberto = false;
+            }
+        })
+
+        addEventListener("resize", () => {
+            if(window.innerWidth > 768){
+                nav.style.display = 'flex';
+                aberto = true;
+            }
+        })
+    </script>
 </body>
 </html>

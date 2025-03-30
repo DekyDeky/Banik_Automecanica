@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px) {
     .cabecalho {
         justify-content: space-between;
+        height: var(--cabecalho-height);
     }
 
     .cabecalho_logo {
@@ -14,11 +15,32 @@
     .cabecalho_nav {
         display: flex;
     }
+
+    .cabecalho_nav-item {
+        border-right: 2px solid black;
+        font-size: var(--cabecalho_font-size);
+    }
+
+    .cabecalho_nav-item:hover{
+        text-decoration: underline;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .cabecalho {
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .cabecalho_icons {
+        display: flex;
+        justify-content: space-around;
+
+        margin: 25px 0;
     }
 
     .cabecalho_menu {
@@ -27,15 +49,25 @@
     
     .cabecalho_nav {
         display: none;
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .cabecalho_nav-item {
+        font-size: var(--cabecalho_font-size--phone);
+        margin-top: 10px;
+
+        border-bottom: 2px solid black;
+        width: 100%;
+
+        text-align: center;
     }
 }
 
-@media screen and (min-width: 1600px) {
-   
-}
 
 .cabecalho {
-    height: var(--cabecalho-height);
+
     width: 100%;
 
     display: flex;
@@ -46,28 +78,26 @@
     border-bottom: 5px solid black;
 }
 
+.cabecalho_icons {
+    width: 100%;
+}
+
 .cabecalho_nav {
     align-items: center;
     justify-content: space-between;
 }
 
 .cabecalho_nav-item {
-    font-size: var(--cabecalho_font-size);
     font-weight: var(--font_title-weight);
     color: var(--cabecalho_font-color);
 
     text-transform: uppercase;
 
-    border-right: 2px solid black;
     padding: 0 15px;
 
     height: 100%;
 
     cursor: pointer;
-}
-
-.cabecalho_nav-item:hover{
-    text-decoration: underline;
 }
 
 .cabecalho_nav-item:last-child {
