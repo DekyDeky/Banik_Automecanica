@@ -5,6 +5,7 @@
 @import url(conteudos/conteudos.css);
 
 :root {
+
     --font: "League Spartan", sans-serif;
 
     --font_title-weight: 800;
@@ -21,30 +22,68 @@
     --introducao_font-color--sirineu: #c4c0c0;
     --introducao_font-size--sirineu: 2rem;
 
+    --introducao_font-title--size__phone: 3rem; 
+    --introducao_font--size--sirineu__phone: 2rem;
+
     --diferenciais_bg-color: #c4c0c0;
     --diferenciais_font-color: #21446f;
     --diferenciais_font-title--size: 5rem;
     --diferenciais_font-title2--size: 2rem;
     --diferenciais_font-text--size: 1.5rem;
 
+    --diferenciais_font-title--size__phone: 3rem;
+
     --servicos_bg-color: white;
     --servicos_font-text-size: 1.3rem;
+    
+    --clientes_bg-color: #191919;
+    --clientes_item-bg--color: #2b5587;
+    --clientes_item-text--color: white;
+    --clientes_item-text--size: 1.8rem;
 
     --rodape_bg-color: #c4c0c0;
     --rodape_font-size: 1.5rem;
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     .logo_banik {
         width: 70%;
     }
+
+    .titulo {
+        font-size: var(--diferenciais_font-title--size__phone);
+    }
+
+    .voltarInicio {
+        width: 100%;
+    }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 768px) {
     .logo_banik {
         width: 20%;
     }
+
+    .titulo {
+        font-size: var(--diferenciais_font-title--size);
+    }
+
+    .voltarInicio {
+        width: 480px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1600px) {
+ 
 }
 
 
@@ -55,6 +94,8 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    scroll-behavior: smooth;
 }
 
 a {
@@ -62,24 +103,25 @@ a {
 }
 
 .titulo {
-    margin-top: 20px;
+    padding-top: 20px;
 
-    font-size: var(--diferenciais_font-title--size);
     font-weight: var(--font_title-weight);
     text-transform: uppercase;   
     
     color: var(--diferenciais_font-color);
+
+    text-align: center;
 }
 
 .voltarInicio {
     display: block;
+    text-align: center;
 
     font-weight: var(--font_title-weight);
     color: var(--btnVoltar_font-color);
     font-size: 3rem;
 
     background-color: #21446f;
-    width: 480px;
     padding-top: 15px;
     padding-bottom: 3px;
 

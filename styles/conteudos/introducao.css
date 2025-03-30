@@ -1,9 +1,75 @@
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1024px) { /*Tablets */
+    .conteudo_introducao {
+        background-position: bottom right;
+        background-size: 50%;
+    }
     
+    .conteudo_introducao-texto {
+        font-size: var(--introducao_font-title--size);
+        width: 65%;
+        margin-left: 50px;
+        margin-top: auto;
+    }
+
+    .conteudo_introducao-whats {
+        font-size: var(--introducao_font-title--size);
+        width: 600px;
+        margin-left: 50px;
+    }
+
+    .conteudo_introducao-whats:hover {
+        background-color: #c92626;
+        transition: .5s;
+    }
+
+    .conteudo_introducao-sirineu {
+        font-size: var(--introducao_font-size--sirineu);
+        margin-right: 50px;
+        align-self: flex-end;
+    }
 }
 
-@media screen and (min-width: 1080px) {
-    
+@media screen and (max-width: 1024px) { /*Celualres pequenso */
+    .conteudo_introducao {
+        align-items: center;
+
+
+        background-position: bottom center;
+        background-size: 58%;
+
+    }
+
+    .conteudo_introducao-texto {
+        font-size: var(--introducao_font-title--size__phone);
+        width: 80%;
+
+        margin-top: auto;
+
+        text-align: center;
+    }
+
+    .conteudo_introducao-whats {
+        font-size: var(--introducao_font-title--size__phone );
+        width: 50%;
+
+        margin-bottom: auto;
+    }
+
+    .conteudo_introducao-sirineu {
+        font-size: var(--introducao_font--size--sirineu__phone);
+
+        text-align: center;
+    }
+
+    .btnWhatsPhone {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .conteudo_introducao {
+        background-size: 80%;
+    }
 }
 
 .conteudo_introducao {
@@ -13,8 +79,7 @@
 
     background-image: url('../../imgs/Sirineu.png');
     background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 50%;
+
 
     display: flex;
     flex-direction: column;
@@ -22,43 +87,29 @@
 }
 
 .conteudo_introducao-texto {
-    font-size: var(--introducao_font-title--size);
     font-weight: var(--font_title-weight);
-
-    width: 70%;
-    margin-top: auto;
-    margin-left: 50px;
 }
 
 .conteudo_introducao-whats {
     background-color: #ff3131;
-    width: 600px;
     padding-top: 15px;
     padding-bottom: 4px;
     border-radius: 15px;
     color: white;
 
     font-weight: var(--font_title-weight);
-    font-size: var(--introducao_font-title--size);
     text-align: center;
 
-    margin-left: 50px;
     margin-top: 20px;
-    transition: .5s;
-}
-
-.conteudo_introducao-whats:hover {
-    background-color: #c92626;
     transition: .5s;
 }
 
 .conteudo_introducao-sirineu {
     color: var(--introducao_font-color--sirineu);
-    font-size: var(--introducao_font-size--sirineu);
 
-    align-self: flex-end;
+
     margin-top: auto;
-    margin-right: 50px;
+
 }
 
 .conteudo_introducao-nome {

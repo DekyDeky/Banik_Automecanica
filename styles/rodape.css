@@ -1,7 +1,38 @@
+@media screen and (min-width: 1600px) { 
+    
+}
+
+@media screen and (min-width: 1280px) { 
+    
+}
+
+@media screen and (min-width: 1024px) { 
+    .rodape {
+        height: 150px;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) { 
+    .logo_rodape {
+        margin: 20px 0;
+    }
+
+    .rodape_nav {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .rodape_nav-item {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+
 .rodape {
     background-color: var(--rodape_bg-color);
-
-    height: 150px;
 }
 
 .rodape_nav {
